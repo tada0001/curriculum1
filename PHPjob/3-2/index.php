@@ -1,18 +1,19 @@
 <?php
 
-$products = array("鉛筆" => 110, "消しゴム" => 165, "物差し" => 550);
+const tax = 0.1; 
 
-$tax = 1.1;    
-foreach($products as $key => $value){
-    $nedan = $value * $tax;
-
-    echo $key;
-    echo "の税込価格は";
-    echo $nedan;
-    echo "円です<br>";    
-}
+function priceEcho($price){
+     
+    $str = $price + ($price * tax);
+    $str = number_format($str);
+    return($str); 
+    }
 
 
+    $products = ["鉛筆" => 110, "消しゴム" => 165, "物差し" => 550];
 
+    foreach($products as $key => $price){
+        print($key. "の税込み価格は" . priceEcho($price) . "円です<br>");
+    }
 
 ?>
