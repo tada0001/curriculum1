@@ -1,16 +1,16 @@
 <?php
 
-const tax = 0.1; 
+const TAX = 0.1; 
 
 function priceEcho($price){
      
-    $str = $price + ($price * tax);
+    $str = $price + ($price * TAX);
     $str = number_format($str);
     return($str); 
     }
 
 
-    $products = ["鉛筆" => 110, "消しゴム" => 165, "物差し" => 550];
+    $products = ["鉛筆" => 100, "消しゴム" => 150, "物差し" => 500];
 
     foreach($products as $key => $price){
         print($key. "の税込み価格は" . priceEcho($price) . "円です<br>");
