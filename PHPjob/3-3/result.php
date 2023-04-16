@@ -43,7 +43,12 @@
 
 
 <br>
-<?php echo date("Y-m-d H:i:s", time()); ?>
+
+<?php
+date_default_timezone_set('Asia/Tokyo');
+echo date("Y-m-d H:i:s", time()); 
+?>
+
 <div>名前は<?php echo $my_name; ?>です。</div>
 <div>番号は<?php echo $kekka; ?>です。</div>
 <div>結果は<?php echo $omikuji1; ?>です。</div>
