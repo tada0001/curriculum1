@@ -1,0 +1,42 @@
+
+
+
+
+body {
+    background-color: rgb(119, 118, 118);
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 180px 0px 0px 0px;
+    color: rgb(255, 255, 255);
+    border-bottom:5px solid #fdfdfd;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+form {
+    text-align: center;
+}
+
+.question1 {
+    font-family: serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.answer1 {
+    font-family: serif;
+    text-align: center;
+}
+
+
